@@ -7,7 +7,9 @@ import random
 k = 4
 polynomial = ''
 
-for i in range(-k, 1):
+for i in range(-k, -1):
     polynomial = polynomial + str(random.randint(0,100))+'x^'+str(-i) + '+'
+polynomial += str(random.randint(0,100))+'x'+'+'
+polynomial += str(random.randint(0,100))
 
 print(polynomial)
