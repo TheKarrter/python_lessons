@@ -14,7 +14,7 @@ def fib(n):
         else: return fib(n+2) - fib(n+1)
 
 fib_list = []
-k = 8
+k = 10
 
 for i in range (-k, k+1):
     fib_list.append(fib(i))
