@@ -28,6 +28,15 @@ def start_massage(message):
 def show_all(message):
     bot.send_message(message.chat.id, 'Список фильмов: ', films)
 
+@bot.message_handler(commands=['help'])
+def show_help(message):
+    bot.send_message(message.chat.id, 'Серега, тут мануал добавь, чтоб понятно было')
+
+@bot.message_handler(commands=['add'])
+def add_film(message):
+    bot.send_message(message.chat.id, 'Название фильма, который вы хотите добавить: ')
+
+
 bot.polling()
 
 # while True:
