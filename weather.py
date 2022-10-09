@@ -10,4 +10,4 @@ bs = BeautifulSoup(response.text, "lxml")
 
 temp = bs.find('div', class_ = 'weather-now-number')
 
-print(temp)
+print(bs)
