@@ -8,7 +8,7 @@
 # w - открытие для записи данных
 # w+, r+
 
-path = 'Lecture_2/file.txt'
+path = 'Lesson_2/file.txt'
 data = open(path, 'r')
 for line in data:
     print(line)
