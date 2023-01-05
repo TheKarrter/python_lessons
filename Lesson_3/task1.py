@@ -1,6 +1,9 @@
 # В ФАЙЛЕ находится N натуральных чисел, записанных через пробел. Среди чисел не хватает одного, чтобы выполнить условие A[i] - 1 = A[i-1]
 # Найдите это число
-
+def fun(num):
+    for i in range(1,len(num)):
+        if num[i] - 1 != num[i-1]:
+            return num[i]-1
 
 
 path = 'Lesson_3/task1.txt'
@@ -12,6 +15,6 @@ for i in range(0, len(list)):
 print(list)
 
 
-for i in range(1,len(list)):
-    if list[i] - 1 != list[i-1]:
-        print(list[i]-1)
+
+print(fun(list))
+    
