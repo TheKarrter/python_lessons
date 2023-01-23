@@ -25,7 +25,7 @@
 
 # print(fun(list))
 
-path = 'Lesson_3/task1.txt'
+path = 'Lesson_3/Practice/task1.txt'
 data = open(path, 'r')
 list = list(data)[0].split(' ')
 data.close
