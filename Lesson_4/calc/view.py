@@ -3,4 +3,11 @@ def view_data(data):
 
 
 def get_value():
-    return int(input('value = '))
+    try:
+        return int(input('value = '))
+    except:
+        print('Please, enter integer')
+        exit()
+
+def get_operation():
+    return (input('operation = '))
